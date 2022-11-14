@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,13 +6,330 @@
 
 
 
+.topnav {
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+   
+  }
+  
+  /* Add an active class to highlight the current page */
+  .topnav a.active {
+    background-color: rgb(0 0 255);
+    color: white;
+    font-weight: 700;
+    font-family: cursive;
+  }
+  
+  /* Hide the link that should open and close the topnav on small screens */
+  .topnav .icon {
+    display: none;
+  }
+
+/* body part start */
+
+.movie-img-wrapper {
+    background-size: cover;
+    width: 200px;
+    height: 250px;
+    box-shadow: 5px 5px 5px 5px rgb(48, 47, 47);
+   margin-bottom: 1rem;
+}
+
+
+.movie-holder {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.loader {
+    text-align: center;
+    margin: 1rem;
+}
 
 
 
-.d-none{
+.d-none {
     display: none;
 }
-.v-none{
+
+.v-none {
     visibility: hidden;
+ }
+ #book-ticket-btn{
+    height: 30px;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 11px;
+    box-sizing: 1px 1px 2px 1px #000;
+ }
+
+.booking-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 70px);
+    grid-template-columns: repeat(4, 70px);
+    gap: 1rem;
 }
 
+#booker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+#booker-grid-holder {
+    margin: 2rem;
+    display: flex;
+    gap: 6rem;
+}
+
+.grid-cell {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.unavailable-seat {
+    background-color: red;
+    cursor: not-allowed;
+    pointer-events: none;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.available-seat {
+    background-color: green;
+    cursor: pointer;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+
+.selected-seat {
+    border: 4px outset rgb(0, 0, 0);
+    background-color: rgb(163, 202, 19);
+    
+    
+}
+#confirm-purchase{
+margin: auto;
+background-color: rgb(165 190 207);
+padding: .5rem;
+line-height: 1.8rem;
+box-shadow: 10px 2px 10px 2px rgb(26, 28, 29) ;
+}
+fieldset{
+    padding: .5rem;
+    line-height: 1.8rem;
+}
+#movie_submit_btn{
+    height: 30px;
+    width: 200px;
+    margin: 1rem 1rem;
+    border-radius: 8px;
+    background-color: rgb(0 255 0);
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgb(12, 61, 12);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+label{
+    font-size: 1rem;
+    font-weight: 700;
+}
+input{
+    height: 25px;
+    margin: 1rem 1rem;
+}
+label span{
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(255 0 0);
+}
+#Success{
+    background-color: rgb(243, 237, 229);
+    padding: 1rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+    box-shadow: 1px 1px 1px 1px rgb(82, 82, 80);
+}
+.nav a{
+    color: white;
+}
+footer{
+    
+    width: 100%;
+    padding: 3rem;
+    background-color: rgb(4,9,30);
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+.about-me{
+    padding: 2rem;
+
+}
+footer h3{
+    text-transform: capitalize;
+    color: rgb(255,255,255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: .02rem;
+}
+footer p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    max-width: 50ch;
+    font-size: .9rem;
+    font-weight: 500;
+    letter-spacing: .01rem;
+    color: #696f72;
+}
+.newsletter{
+    
+    padding: 2rem;
+}
+.newsletter input{
+    width: 15rem;
+    height: 2.5rem;
+    padding: .5rem;
+    color:#696f72 ;
+}
+.newsletter button{
+   
+    height: 2.56rem;
+    width: 5.25rem;
+    margin-left: 1.8rem;
+    transform: translateX(-7.5px);
+    border: none;
+    background-color: #8490ff;
+    color: rgb(255,255,255);
+}
+.follow-me{
+    padding: 2rem;
+
+}
+.social{
+    display: flex;
+    justify-content: space-evenly;
+}
+.social li{
+    list-style: none;
+    padding-left: .5rem;
+}
+span{
+    color: rgb(0,0,255);
+}
+.about-me i{
+    color: rgb(255, 0, 0);
+}
+.cinepolos{
+    width: 100px;
+    height: 100px;
+    background: url(https://www.nosotros-los-diseñadores.com/wp-content/uploads/2019/06/nuevo-logo-cinepolis-2.jpg)no-repeat;
+    background-size: 100%;
+}
+.ionox{
+    width: 100px;
+    height: 100px;
+    background: url(https://csrbox.org/company/cmp_logo/1549516299Screen-Shot-2018-05-31-at-5.58.25-PM.png)no-repeat;
+    background-size: 100%;
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  footer{
+    flex-direction: column;
+}
+  }
+  @media screen and (max-width: 1064px) {
+    .movie-holder {
+       flex-wrap: wrap;
+       margin-left: auto;
+       margin-right: auto;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    #booker-grid-holder {
+       flex-direction: column;
+    }
+  }
+  @media screen and (max-width: 380px) {
+  .booking-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-columns: repeat(4, 50px);
+    gap: 1rem;
+}
+#movie_submit_btn{
+    height: 25px;
+    width: 150px;
+    margin: 1rem 1rem;
+     font-size: 1.2rem;
+    font-weight: 700;
+   
+}
+  }
+  @media screen and (max-width: 300px) {
+    .booking-grid {
+      display: grid;
+      grid-template-rows: repeat(3, 40px);
+      grid-template-columns: repeat(4, 40px);
+      gap: 1rem;
+  }
+  #movie_submit_btn{
+      height: 25px;
+      width: 130px;
+      margin: 1rem 1rem;
+       font-size: 1rem;
+      
+     
+  }
+  input{
+    width: 150px;
+    height: 25px;
+    margin: 1rem 1rem;
+}
+#confirm-purchase{
+    margin:.5rem .5rem;
+    
+    }
+    }

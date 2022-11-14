@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./app.js" defer type="module"> </script>
     <link rel="stylesheet" href="./app.css">
-    <title>Document</title>
+    <title>Online Book movie Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
+<body>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">SHOW TIME</a>
+            <a href="#news">HOME</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+            
     <main>
 
     </main>
@@ -18,5 +31,29 @@
         <div id="booker-grid-holder"></div>
         <button id="book-ticket-btn" class="v-none">Book my seats</button>
     </div>
+    <footer>
+        <div class="about-me">
+            <h3>about me</h3>
+            <p>I have tested a number of registry fix and clean utilities and present our top 3 list on my site for your convenience.</p>
+            <p>Copyright ©2022 All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <span> @Amulya</span></p>
+        </div>
+        <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with my latest trends</p>
+            <input type="email" id="femail" name="femail" placeholder="Enter Email Address" required>
+            <button type="button" id="footer-button" onclick="updateFunction()">SEND</button>
+        </div>
+        <div class="follow-me">
+            <h3>Our Bussiness Partner</h3>
+            <p>Let us be Enjoy</p>
+            <div class="social">
+                <li><div class="cinepolos"></div></li>
+                <li><div class="ionox"></div></li>
+                
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
